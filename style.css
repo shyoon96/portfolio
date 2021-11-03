@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font-family: "Noto-Sans KR", "나눔고딕", 'sans-serif';
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -999;
+    overflow: hidden;
+}
+
+#header {
+    top: 0;
+    display: block;
+    width: 100%;
+    background: #264653;
+    z-index: 10;
+    position: fixed;
+
+}
+
+#gnb {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#gnb li {
+    margin: 0 40px;
+}
+
+#gnb li a {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+#gnb li.active a:hover {
+    color: orangered;
+}
+
+#gnb li.active a {
+    color: orangered;
+}
+
+.section{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.portfolio{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
+.container>div {
+    float: left;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.number {
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: #E76F51;
+}
